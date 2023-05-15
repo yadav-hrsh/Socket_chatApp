@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+button,
+input {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  max-height: 100vh;
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+.Toastify__toast-theme--dark {
+  background-color: #00000076 !important;
+}
+
+.input_btn{
+  @apply bg-transparent p-[1rem] border-[0.1rem] border-[#4e0eff] rounded-md text-white w-[100%] focus:border-[#997af0] focus:outline-none;
+}
+
+.selected{
+  @apply border-[0.2rem] border-sky-700 rounded-full duration-300 translate-y-8 scale-125
+}
+.button{
+  @apply bg-[#997af0] text-white py-[1rem] px-[2rem] hover:bg-[#4e0eff] duration-700 rounded-lg font-extrabold
+}
+
+.sendermsg{
+  @apply flex font-serif justify-end p-2  text-xl
+}
+.othermsg{
+  @apply p-2 rounded-xl text-xl 
+}
